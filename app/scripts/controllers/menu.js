@@ -9,13 +9,7 @@
  */
 angular.module('udaciMealsApp')
   .controller('MenuCtrl',['foodFinder' ,  function (menu) {
-    this.items = "";
-    
-    menu.getMenu().then((data)=>{
-      this.items=data;
-    })
-
-    
+    this.items = menu.getMenu();
 
     this.incrementRating=(item)=>{
       item.rating = ((item.rating*10) + 1)/10;
