@@ -43,7 +43,7 @@ angular.module('udaciMealsApp')
   };
 
   this.setActiveDay = (day)=>{
-    this.activeDay=day;
+    activeDay=day;
   };
 
   this.getOrderSelection=()=>{

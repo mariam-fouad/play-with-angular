@@ -10,4 +10,8 @@
 angular.module('udaciMealsApp')
   .controller('OrderCtrl',[ 'orderManger', function (order) {
     this.orderList = order.getOrderSelection();
+
+    this.updateDay=day=>{
+      order.setActiveDay(day);
+    }
   }]);
