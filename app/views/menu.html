@@ -3,7 +3,11 @@
         <div class="col-md-4">
             <h4>{{item.name}}</h4>
             <img ng-src="images/{{item.img}}" alt="{{item.name}}" height="200px"/>
-            <p>Rating :{{item.rating}}</p>
+            <p>Rating :{{item.rating}} 
+                <span ng-if="item.rating > 4.5"> - Awesome choice! </span>
+                <span ng-if="item.rating < 4.5 && item.rating > 4.0"> - Great choice! </span>
+                <span ng-if="item.rating < 4.0 && item.rating > 3.5"> - Good choice! </span>
+            </p>
         </div>
     </div>
 </div>
