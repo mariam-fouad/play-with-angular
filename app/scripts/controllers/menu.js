@@ -9,9 +9,8 @@
  */
 angular.module('udaciMealsApp')
   .controller('MenuCtrl', function () {
-    this.awesomeThings = [
-      'HTML5 Boilerplate',
-      'AngularJS',
-      'Karma'
-    ];
+    this.id="coconut-chocolate-icecream";
+    this.name="Coconut Chocolate Ice cream";
+    this.img="coconut-chocolate-icecream";
+    this.rating=4.9;
   });
