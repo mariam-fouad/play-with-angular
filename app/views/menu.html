@@ -2,8 +2,8 @@
     <div class="items-controller" ng-repeat="item in menu.items">
         <div class="col-md-4">
             <h4>{{item.name}}</h4>
+            <img ng-src="images/{{item.img}}" alt="{{item.name}}" height="200px"/>
             <p>Rating :{{item.rating}}</p>
-            <p>Image : {{item.img}}</p>
         </div>
     </div>
 </div>
