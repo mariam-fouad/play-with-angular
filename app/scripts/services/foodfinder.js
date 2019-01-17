@@ -9,7 +9,7 @@
  */
 angular.module('udaciMealsApp')
   .service('foodFinder', function () {
-    this.menu=[
+    const menu=[
       {
         "id":"coconut-chocolate-icecream",
         "name":"Coconut Chocolate Ice cream",
@@ -30,6 +30,6 @@ angular.module('udaciMealsApp')
       }
     ]
     this.getMenu=()=>{
-      return this.menu;
+      return menu;
     }
   });
