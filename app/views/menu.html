@@ -13,11 +13,12 @@
                 <span ng-if="item.rating <3.5"> - Give it a try</span>
             </p>
             <div>
-                <select ng-modal="item.meal">
-                    <option value="breakfast" selected>Breakfast</option>
+                <select ng-model="item.meal">
+                    <option value="breakfast">Breakfast</option>
                     <option value="lunch">Lunch</option>
                     <option value="dinner">Dinner</option>
                 </select>
+                <button ng-click="menu.choseItem(item.meal,item.name)">Chose</button>
             </div>
         </div>
     </div>

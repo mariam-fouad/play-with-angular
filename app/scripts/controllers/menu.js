@@ -8,7 +8,7 @@
  * Controller of the udaciMealsApp
  */
 angular.module('udaciMealsApp')
-  .controller('MenuCtrl',['foodFinder' ,  function (menu) {
+  .controller('MenuCtrl',['foodFinder' ,'orderManger', function (menu , orderManger) {
     this.items = menu.getMenu();
 
     this.incrementRating=(item)=>{
@@ -25,4 +25,9 @@ angular.module('udaciMealsApp')
       }
     };
     
+    this.choseItem=(meal , menuItem)=>{
+      console.log(meal +" "+ menuItem);
+
+      orderManger.setOrderSelection(meal,menuItem);
+    }
   }]);
