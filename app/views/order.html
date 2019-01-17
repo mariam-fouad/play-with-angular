@@ -1,5 +1,5 @@
 <div class="row">
-        <div class="col-md-4" ng-repeat="(day,orders) in order.orderList" ng-click="order.updateDay(day)">
+        <div class="col-md-4 day" ng-repeat="(day,orders) in order.orderList" ng-click="order.updateDay(day)">
             {{day}}
             <dl>
                 <dt>Breakfast :</dt><dd>{{orders.breakfast}}</dd>

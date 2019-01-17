@@ -86,3 +86,9 @@ body {
   background-color: #dc1c11;
   color: #ffffff;
 }
+
+.day{
+  cursor: pointer;
+  background-color: rgb(240, 236, 236);
+  margin: 2px;
+}
