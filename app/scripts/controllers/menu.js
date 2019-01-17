@@ -29,5 +29,19 @@ angular.module('udaciMealsApp')
         rating:3.9
       }
     ];
+
+    this.incrementRating=(item)=>{
+      item.rating = ((item.rating*10) + 1)/10;
+      if(item.rating>5){
+        item.rating=5.0;
+      }
+    };
+
+    this.decrementRating=(item)=>{
+      item.rating = ((item.rating*10) - 1)/10;
+      if(item.rating<0){
+        item.rating=0.0;
+      }
+    };
     
   });
