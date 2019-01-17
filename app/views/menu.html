@@ -7,9 +7,10 @@
             <button ng-click="menu.incrementRating(item)">+</button>
             <button ng-click="menu.decrementRating(item)">-</button>
             <p>
-                <span ng-if="item.rating > 4.5" ng-class="{heightlight: item.rating> 3.8 }"> - Awesome choice! </span>
-                <span ng-if="item.rating < 4.5 && item.rating > 4.0"> - Great choice! </span>
-                <span ng-if="item.rating < 4.0 && item.rating > 3.5"> - Good choice! </span>
+                <span ng-if="item.rating >= 4.5" ng-class="{heightlight: item.rating> 4.8 }"> - Awesome choice! </span>
+                <span ng-if="item.rating < 4.5 && item.rating >= 4.0"> - Great choice! </span>
+                <span ng-if="item.rating < 4.0 && item.rating >= 3.5"> - Good choice! </span>
+                <span ng-if="item.rating <3.5"> - Give it a try</span>
             </p>
         </div>
     </div>
