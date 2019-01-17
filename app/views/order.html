@@ -1,1 +1,10 @@
-<p>This is the order view.</p>
+<div class="row">
+        <div class="col-md-4" ng-repeat="(day,orders) in order.orderList">
+            {{day}}
+            <dl>
+                <dt>Breakfast :</dt><dd>{{orders.breakfast}}</dd>
+                <dt>Lunch :</dt><dd>{{orders.lunch}}</dd>
+                <dt>Dinner :</dt><dd>{{orders.dinner}}</dd>
+            </dl>
+        </div>
+    </div>
