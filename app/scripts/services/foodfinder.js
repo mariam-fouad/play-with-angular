@@ -36,7 +36,13 @@ angular.module('udaciMealsApp')
       return menu;
     }
 
-    this.getMenuID = (id)=>{
-      return menu[id];
+    this.getMenuID = (itemId)=>{
+      let menutoReturn;
+      menu.forEach((menuItem)=>{
+        if(menuItem.id==itemId){
+          menutoReturn = menuItem;
+        }
+      });
+      return menutoReturn;
     }
   });

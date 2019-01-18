@@ -1,15 +1,15 @@
 <div class="row">
             <div class="col-md-12">
-                <h3>{{item.name}}</h3>
-                <img ng-src="images/{{item.img}}" alt="{{item.name}}" width="400px"/>
-                <p>Rating :{{item.rating}} </p>
+                <h3>{{item.itemData.name}}</h3>
+                <img ng-src="images/{{item.itemData.img}}" alt="{{item.itemData.name}}" width="400px"/>
+                <p>Rating :{{item.itemData.rating}} </p>
                 <p>
-                    <span ng-if="item.rating >= 4.5" ng-class="{heightlight: item.rating> 4.8 }"> - Awesome choice! </span>
-                    <span ng-if="item.rating < 4.5 && item.rating >= 4.0"> - Great choice! </span>
-                    <span ng-if="item.rating < 4.0 && item.rating >= 3.5"> - Good choice! </span>
-                    <span ng-if="item.rating <3.5"> - Give it a try</span>
+                    <span ng-if="item.itemData.rating >= 4.5" ng-class="{heightlight: item.itemData.rating> 4.8 }"> - Awesome choice! </span>
+                    <span ng-if="item.itemData.rating < 4.5 && item.itemData.rating >= 4.0"> - Great choice! </span>
+                    <span ng-if="item.itemData.rating < 4.0 && item.itemData.rating >= 3.5"> - Good choice! </span>
+                    <span ng-if="item.itemData.rating <3.5"> - Give it a try</span>
                 </p>
-               <p>{{item.description}}</p>
+               <p>{{item.itemData.description}}</p>
             </div>
         </div>
     </div>
