@@ -1,5 +1,7 @@
 'use strict';
 
+import { runInThisContext } from "vm";
+
 /**
  * @ngdoc service
  * @name udaciMealsApp.foodFinder
@@ -34,5 +36,9 @@ angular.module('udaciMealsApp')
     ]
     this.getMenu=()=>{
       return menu;
+    }
+
+    this.getMenuID = (id)=>{
+      return menu[id];
     }
   });
