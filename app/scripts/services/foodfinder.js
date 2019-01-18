@@ -1,7 +1,5 @@
 'use strict';
 
-import { runInThisContext } from "vm";
-
 /**
  * @ngdoc service
  * @name udaciMealsApp.foodFinder
