@@ -15,21 +15,27 @@ angular.module('udaciMealsApp')
         "name":"Coconut Chocolate Ice cream",
         "img":"coconut-chocolate-icecream.jpg",
         "rating":4.9,
-        "description":'Smoth rich coconut ice cream with hot creamy choclate syrup'
+        "description":'Smoth rich coconut ice cream with hot creamy choclate syrup',
+        "calories":"500 per serving",
+        "reviews":["Best Ice cream EVERRR !", "I can't have enough of it "]
       },
       {
         "id":"bbq-chicken-ramen",
         "name":"BBQ Chicken Ramen",
         "img":"bbq-chicken-ramen.jpg",
         "rating":4.4,
-        "description":'hot fresh ramen noodels with tender BBQ chicken'
+        "description":'hot fresh ramen noodels with tender BBQ chicken',
+        "calories":"400 per serving",
+        "reviews":["I enjoy the mix of flavours in this dish", "Too spicey for me"]
       },
       {
         "id":"beef-steak-soft-tacos",
         "name":"Beef Steak Soft Tacos",
         "img":"beef-steak-soft-tacos.jpg",
         "rating":3.9,
-        "description":'strong flavour beef steak with soft tacos'
+        "description":'strong flavour beef steak with soft tacos',
+        "calories":"600 per serving",
+        "reviews":["The steak was nice but the shell was mah", "Need more flavours!"]
       }
     ]
     this.getMenu=()=>{
