@@ -18,12 +18,18 @@ angular
         url:'/',
         templateUrl:'views/menu.html',
         controller:'MenuCtrl as menu'
-      });
-
-      $stateProvider
+      })
       .state('item',{
         url:'/item/:id',
         templateUrl:'views/item.html',
         controller:'ItemCtrl as item'
-      });
+      })
+      .state('item.calories',{
+        url:'/calories',
+        templateUrl:'views/calories.html',
+      })
+      .state('item.reviews',{
+        url:'/reviews',
+        templateUrl:'views/reviews.html',
+      })
   }])
