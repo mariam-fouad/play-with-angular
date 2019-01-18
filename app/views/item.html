@@ -10,6 +10,8 @@
                     <span ng-if="item.itemData.rating <3.5"> - Give it a try</span>
                 </p>
                <p>{{item.itemData.description}}</p>
+               <p> <a ui-sref="item.calories">Calories</a> | <a ui-sref="item.reviews">Reviews</a></p>
+               <div ui-view></div>
             </div>
         </div>
     </div>
