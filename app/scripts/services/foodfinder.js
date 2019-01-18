@@ -37,12 +37,10 @@ angular.module('udaciMealsApp')
     }
 
     this.getMenuID = (itemId)=>{
-      let menutoReturn;
-      menu.forEach((menuItem)=>{
+     return  menu.find((menuItem)=>{
         if(menuItem.id==itemId){
-          menutoReturn = menuItem;
+          return menuItem;
         }
       });
-      return menutoReturn;
     }
   });
