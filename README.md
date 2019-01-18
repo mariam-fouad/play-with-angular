@@ -4,9 +4,11 @@ This project is generated with [yo angular generator](https://github.com/yeoman/
 version 0.16.0.
 
 ## Build & development
+<ol>
+<li>Clone this repo</li>
+<li>cd into the newly cloned project/li>
+<li>Install NPM dependencies via `npm install`/li>
+<li>Install Bower dependencies via `bower install`/li>
+<ol>
+`grunt serve` for preview.
 
-Run `grunt` for building and `grunt serve` for preview.
-
-## Testing
-
-Running `grunt test` will run the unit tests with karma.
