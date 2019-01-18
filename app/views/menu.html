@@ -1,7 +1,7 @@
 <div class="row">
     <div class="items-controller" ng-repeat="item in menu.items">
         <div class="col-md-4">
-            <h4>{{item.name}}</h4>
+            <h4><a ui-sref="item({id: item.id})">{{item.name}}</a></h4>
             <img ng-src="images/{{item.img}}" alt="{{item.name}}" height="200px"/>
             <p>Rating :{{item.rating}} </p>
             <button ng-click="menu.incrementRating(item)">+</button>
